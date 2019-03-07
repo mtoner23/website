@@ -33,7 +33,7 @@ function preload(){
 	segRevImg = loadImage("p5/centipede_js/images/segment_rotate.png");
 
 	shotSound = loadSound("p5/centipede_js/sounds/shot.wav")
-	music = loadSound("p5/centipede_js/sounds/music.wav")
+	music = loadSound("p5/centipede_js/sounds/music.mp3")
 
 	font = loadFont('p5/centipede_js/fonts/SourceSansPro-Regular.otf');
 }
