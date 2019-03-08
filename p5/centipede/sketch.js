@@ -15,27 +15,28 @@ var speed = INIT_SPEED;
 var wait = 0;
 var score = 0;
 var mute;
+var canvas;
 
 fontsize = 20;
 
 function preload(){
-	mushroomImg = loadImage("p5/centipede_js/images/mushroom.png");
-	mushroom1Hit = loadImage("p5/centipede_js/images/mushroom1Hit.png");
-	mushroom2Hit = loadImage("p5/centipede_js/images/mushroom2Hit.png");
-	playerImg = loadImage("p5/centipede_js/images/player_2x.png");
-	shotImg = loadImage("p5/centipede_js/images/shot.png");
-	spiderImg = loadImage('p5/centipede_js/images/spider.png');
-	segHitImg = loadImage("p5/centipede_js/images/segment_hit.png");
-	segRevHitImg = loadImage("p5/centipede_js/images/segment_rotate_hit.png");
-	segImg = loadImage("p5/centipede_js/images/segment.png");
-	headImg = loadImage("p5/centipede_js/images/head.png");
-	headRevImg = loadImage("p5/centipede_js/images/head_rotate.png");
-	segRevImg = loadImage("p5/centipede_js/images/segment_rotate.png");
+	mushroomImg = loadImage("p5/centipede/images/mushroom.png");
+	mushroom1Hit = loadImage("p5/centipede/images/mushroom1Hit.png");
+	mushroom2Hit = loadImage("p5/centipede/images/mushroom2Hit.png");
+	playerImg = loadImage("p5/centipede/images/player_2x.png");
+	shotImg = loadImage("p5/centipede/images/shot.png");
+	spiderImg = loadImage('p5/centipede/images/spider.png');
+	segHitImg = loadImage("p5/centipede/images/segment_hit.png");
+	segRevHitImg = loadImage("p5/centipede/images/segment_rotate_hit.png");
+	segImg = loadImage("p5/centipede/images/segment.png");
+	headImg = loadImage("p5/centipede/images/head.png");
+	headRevImg = loadImage("p5/centipede/images/head_rotate.png");
+	segRevImg = loadImage("p5/centipede/images/segment_rotate.png");
 
-	shotSound = loadSound("p5/centipede_js/sounds/shot.wav")
-	music = loadSound("p5/centipede_js/sounds/music.mp3")
+	shotSound = loadSound("p5/centipede/sounds/shot.wav")
+	music = loadSound("p5/centipede/sounds/music.mp3")
 
-	font = loadFont('p5/centipede_js/fonts/SourceSansPro-Regular.otf');
+	font = loadFont('p5/centipede/fonts/SourceSansPro-Regular.otf');
 }
 
 function flipMute(){
@@ -50,7 +51,8 @@ function flipMute(){
 }
 
 function setup() {
-	createCanvas(BOARD_WIDTH, BOARD_HEIGHT);
+	canvas = createCanvas(BOARD_WIDTH, BOARD_HEIGHT);
+	canvas.parent('centipede')
 
 	for (i = 0; i < BOARD_HEIGHT/GRID_SIZE; i++){
 		grid[i] = new Array(BOARD_WIDTH/GRID_SIZE);
@@ -63,6 +65,8 @@ function setup() {
 	textFont(font);
 
 	muteButton = createButton('Mute/Unmute')
+	print(muteButton.position());
+	muteButton.position(canvas.position().x, canvas.position().y + height);
 	muteButton.mousePressed(flipMute)
 	muteButton.position(BOARD_WIDTH + 10, BOARD_HEIGHT/2);
 }
