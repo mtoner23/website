@@ -11,9 +11,9 @@ function Vehicle(x, y,ptRad) {
   this.rad = ptRad;
   let dist = 
   this.color = {
-    r : sin(0.03*x + 0) * width,
-    g : sin(0.03*x + 2*PI/3) * width,
-    b : sin(0.03*x + 4*PI/3) * width,
+    r : sin(0.06*x + 0) * width,
+    g : sin(0.06*x + 2*PI/3) * width,
+    b : sin(0.06*x + 4*PI/3) * width,
 	}
 	// this.r = random(256);
 	// this.g = random(256);

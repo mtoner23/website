@@ -1,0 +1,52 @@
+/* main.css */
+
+.header {
+    padding-top: 0px;
+    text-align: center;
+    font-family: Arial;
+    font-style: bold;
+ 	color: #000000;
+}
+
+.sketch {
+    margin: 0;
+    display: flex;
+
+    /* This centers the sketch horizontally. */
+    justify-content: center;
+}
+
+body {
+	background-color: #F5EFEF;
+	font-family: Arial;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: Arial;
+    font-style: bold;
+    background-color: #5F717B;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    font-family: Arial;
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 20px;
+    color: #F5EFEF;
+}
+
+a:hover {
+    color: #1f1f2e;
+}

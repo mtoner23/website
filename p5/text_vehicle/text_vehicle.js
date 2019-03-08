@@ -13,6 +13,8 @@ var ptRad = 5;
 var f = 0;
 let speedSlider;
 var canvas;
+var backgnd = '#F5EFEF';
+var badWords = ['ass','penis','shit'];
 
 function preload() {
   font = loadFont('p5/text_vehicle/fonts/AvenirNextLTPro-Demi.otf');
@@ -26,7 +28,7 @@ function setup() {
 
   canvas = createCanvas(fontBox.w + 2 * pad, fontBox.h + 2 * pad);
   canvas.parent('text_vehicle');
-  background(51);
+  background(backgnd);
 
   points = font.textToPoints(string, pad, fontBox.h + pad, fontSize, {
     sampleFactor: 0.2
@@ -39,35 +41,34 @@ function setup() {
   }
 
   input = createInput();
-  input.position(canvas.position().x, canvas.position().y);
   input.parent('text_vehicle')
-  input.style('background: rgb(51,51,51)')
-  input.style('color: rgb(200,200,200)');
 
-  // twitter = createImg('images/twitter.png')
-  // twitter.position(canvas.position().x,canvas.position().y + input.h);
-  // twitter.size(32,32);
-
-  // github = createImg('images/github.png');
-  // github.position(canvas.position().x,canvas.position().y + input.h);
-  // github.size(32,32);
+  input.style('border: 1 px');
+  input.style('background',backgnd)
+  //input.style('color: rgb(200,200,200)');
 
 
   button = createButton('Enter');
-  button.position(input.x + input.width, input.y);
   button.mouseClicked(editText);
+  button.style('background',backgnd)
+
+  resizeSketch(fontBox);
 
   frameRate(30);
 }
 
+function resizeSketch(fontBox){
+  resizeCanvas(fontBox.w + 2 * pad, fontBox.h + 2 * pad);
+  input.position(canvas.position().x + canvas.position().w/2, canvas.position().y);
+  button.position(input.position().x + input.width, input.position().y);
+}
+
 function editText(){
-  string = input.value();
+  string = checkString(input.value());
 
   let fontBox = font.textBounds(string, 0, 0, fontSize)
-  resizeCanvas(fontBox.w + 2 * pad, fontBox.h + 2 * pad);
-  input.position(canvas.position().x, canvas.position().y);
-  button.position(input.x + input.width, input.y);
-  //background(51);
+
+  resizeSketch(fontBox);
 
   newPoints = font.textToPoints(string, pad, fontBox.h + pad, fontSize, {
     sampleFactor: 0.2
@@ -92,6 +93,16 @@ function editText(){
 
 }
 
+function checkString(string){
+  for (var w in badWords){
+    if(string.includes(badWords[w])){
+      //input.value = 'BAD WORD!'
+      return '!@&%*'
+    }
+  }
+  return string;
+}
+
 function mousePressed(){
   var mouse = createVector(mouseX, mouseY);
  	for (var v in vehicles){
@@ -100,7 +111,7 @@ function mousePressed(){
 }
 
 function draw() {
-  background(51);
+  background(backgnd);
   for (var i = 0; i < vehicles.length; i++) {
     var v = vehicles[i];
     var next = points[(i + f) % points.length];
@@ -116,8 +127,7 @@ function draw() {
 }
 
 function keyPressed(){
-  print('TESTING');
-  if(keyCode == 'ENTER' || keyCode == 'RETURN'){
+  if(keyCode == ENTER || keyCode == RETURN){
     editText();
   }
 }
