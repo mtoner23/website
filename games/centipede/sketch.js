@@ -20,23 +20,23 @@ var canvas;
 fontsize = 20;
 
 function preload(){
-	mushroomImg = loadImage("p5/centipede/images/mushroom.png");
-	mushroom1Hit = loadImage("p5/centipede/images/mushroom1Hit.png");
-	mushroom2Hit = loadImage("p5/centipede/images/mushroom2Hit.png");
-	playerImg = loadImage("p5/centipede/images/player_2x.png");
-	shotImg = loadImage("p5/centipede/images/shot.png");
-	spiderImg = loadImage('p5/centipede/images/spider.png');
-	segHitImg = loadImage("p5/centipede/images/segment_hit.png");
-	segRevHitImg = loadImage("p5/centipede/images/segment_rotate_hit.png");
-	segImg = loadImage("p5/centipede/images/segment.png");
-	headImg = loadImage("p5/centipede/images/head.png");
-	headRevImg = loadImage("p5/centipede/images/head_rotate.png");
-	segRevImg = loadImage("p5/centipede/images/segment_rotate.png");
+	mushroomImg = loadImage("/games/centipede/images/mushroom.png");
+	mushroom1Hit = loadImage("/games/centipede/images/mushroom1Hit.png");
+	mushroom2Hit = loadImage("/games/centipede/images/mushroom2Hit.png");
+	playerImg = loadImage("/games/centipede/images/player_2x.png");
+	shotImg = loadImage("/games/centipede/images/shot.png");
+	spiderImg = loadImage('/games/centipede/images/spider.png');
+	segHitImg = loadImage("/games/centipede/images/segment_hit.png");
+	segRevHitImg = loadImage("/games/centipede/images/segment_rotate_hit.png");
+	segImg = loadImage("/games/centipede/images/segment.png");
+	headImg = loadImage("/games/centipede/images/head.png");
+	headRevImg = loadImage("/games/centipede/images/head_rotate.png");
+	segRevImg = loadImage("/games/centipede/images/segment_rotate.png");
 
-	shotSound = loadSound("p5/centipede/sounds/shot.wav")
-	music = loadSound("p5/centipede/sounds/music.mp3")
+	shotSound = loadSound("/games/centipede/sounds/shot.wav")
+	music = loadSound("/games/centipede/sounds/music.mp3")
 
-	font = loadFont('p5/centipede/fonts/SourceSansPro-Regular.otf');
+	font = loadFont('/games/centipede/fonts/SourceSansPro-Regular.otf');
 }
 
 function flipMute(){
@@ -65,10 +65,8 @@ function setup() {
 	textFont(font);
 
 	muteButton = createButton('Mute/Unmute')
-	print(muteButton.position());
-	muteButton.position(canvas.position().x, canvas.position().y + height);
+	muteButton.position(canvas.position().x, canvas.position().y - muteButton.height);
 	muteButton.mousePressed(flipMute)
-	muteButton.position(BOARD_WIDTH + 10, BOARD_HEIGHT/2);
 }
 
 function drawScore(){
