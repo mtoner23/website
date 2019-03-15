@@ -20,23 +20,23 @@ var canvas;
 fontsize = 20;
 
 function preload(){
-	mushroomImg = loadImage("/games/centipede/images/mushroom.png");
-	mushroom1Hit = loadImage("/games/centipede/images/mushroom1Hit.png");
-	mushroom2Hit = loadImage("/games/centipede/images/mushroom2Hit.png");
-	playerImg = loadImage("/games/centipede/images/player_2x.png");
-	shotImg = loadImage("/games/centipede/images/shot.png");
-	spiderImg = loadImage('/games/centipede/images/spider.png');
-	segHitImg = loadImage("/games/centipede/images/segment_hit.png");
-	segRevHitImg = loadImage("/games/centipede/images/segment_rotate_hit.png");
-	segImg = loadImage("/games/centipede/images/segment.png");
-	headImg = loadImage("/games/centipede/images/head.png");
-	headRevImg = loadImage("/games/centipede/images/head_rotate.png");
-	segRevImg = loadImage("/games/centipede/images/segment_rotate.png");
+	mushroomImg = loadImage("images/mushroom.png");
+	mushroom1Hit = loadImage("images/mushroom1Hit.png");
+	mushroom2Hit = loadImage("images/mushroom2Hit.png");
+	playerImg = loadImage("images/player_2x.png");
+	shotImg = loadImage("images/shot.png");
+	spiderImg = loadImage("images/spider.png");
+	segHitImg = loadImage("images/segment_hit.png");
+	segRevHitImg = loadImage("images/segment_rotate_hit.png");
+	segImg = loadImage("images/segment.png");
+	headImg = loadImage("images/head.png");
+	headRevImg = loadImage("images/head_rotate.png");
+	segRevImg = loadImage("images/segment_rotate.png");
 
-	shotSound = loadSound("/games/centipede/sounds/shot.wav")
-	music = loadSound("/games/centipede/sounds/music.mp3")
+	shotSound = loadSound("sounds/shot.wav")
+	music = loadSound("sounds/music.mp3")
 
-	font = loadFont('/games/centipede/fonts/SourceSansPro-Regular.otf');
+	font = loadFont("fonts/SourceSansPro-Regular.otf");
 }
 
 function flipMute(){

@@ -28,6 +28,13 @@ body {
     margin-bottom: 25px;
 }
 
+.row {
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .navbar {
     padding-top: 5px;
     padding-bottom: 5px;
