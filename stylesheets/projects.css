@@ -5,4 +5,16 @@
 	text-align: center;
 	padding-right: 10px;
 	padding-left: 10px;
+	width: 50%;
+}
+
+.entry{
+	justify-content: center;
+	text-align: center;
+}
+
+.header p{
+	justify-content: center;
+	text-align: center;
+	width: 70%;
 }
