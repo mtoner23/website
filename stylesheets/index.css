@@ -4,6 +4,9 @@
     color: #0a0a0f;
 }
 
+.header p {
+	text-align: center;
+}
 
 a {
     color: #7575a3;

@@ -9,12 +9,7 @@
 }
 
 .entry{
-	justify-content: center;
-	text-align: center;
-}
-
-.header p{
-	justify-content: center;
-	text-align: center;
-	width: 70%;
+	text-align: left;
+	margin: auto;
+	width: 80%;
 }

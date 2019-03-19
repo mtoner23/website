@@ -9,6 +9,16 @@
  	color: #000000;
 }
 
+.header p{
+    text-align: left;
+    margin: auto;
+    width: 80%;
+}
+
+.header img{
+    text-align: center;
+}
+
 .sketch {
     margin: 0;
     display: flex;
