@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!--Site Wide head information-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script> $(function () { $("#navbar").load("/include/navbar.html"); $("#links").load("/include/links.html"); });</script>
+
 	<title>Toner Land</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="/image/x-icon">
 	<link rel="stylesheet" href="/stylesheets/main.css">
 
 	<!-- Page specific head information -->
 	<link rel="stylesheet" href="/stylesheets/blog.css">
 
 </head>
+
 <body>
-	<div class='navbar'>
-		<a href="/">Home</a>
-		|
-		<a href="/projects/projects.html">Projects</a>
-		|
-		<a href="/about/about.html">About</a>
-		|
-  		<a href="/blog/blog.html">Blog</a>
-  		|
-  		<a href="http://engineering.purdue.edu/477grp7">ECE 477</a>
-	</div>
+	<div id='navbar'></div>
 
 	<div class='header'>
 		<h1>Michael's Blog</h1>
 	</div>
 	<div class='blog'>
 		<div class='entry'>
+			<h2>25 September 2021</h2>
+			<p>Booted my old laptop up for the first time in a year and a half. Works like a charm, god I miss this old
+				keyboard. Feels like I can type twice as fast on this.</p>
+			<p>Working on the website again, just to freshen up the links and Refactor it a bit. I'm thinking about
+				putting a rudimenty food blog on the website. Just reviewing local chicago joints. Nothing clear yet,
+				just looking for an outlet</p>
+		</div>
+		<div class='entry'>
 			<h2>15 March 2019 </h2>
-			<p>Currently on the plane right now flying back from Seattle to Chicago for spring break with Yash. I had a good week walking around the city and doing a lot of hiking. We started the week with our friend Erin from Purdue at San Juan Island. We visited Pike's place a few times and got some good food there. It was great seeing such a beautiul city.</p>
+			<p>Currently on the plane right now flying back from Seattle to Chicago for spring break with Yash. I had a
+				good week walking around the city and doing a lot of hiking. We started the week with our friend Erin
+				from Purdue at San Juan Island. We visited Pike's place a few times and got some good food there. It was
+				great seeing such a beautiul city.</p>
 
+		</div>
 		<div class='entry'>
 			<h2>14 July 1944</h2>
-			<p>Honey, I am writing to you from the trenches of versailles, the war has been long and hard but thankfully I have these blog posts for you to see. Hopefully tomorrow we can get a group pic for the gram to cheer us up. Me and the mates have been working out lately and are looking pretty cut. Sorry i have been getting distracted. What am I doing here again?? Is this a joke blog or am I just bored because its 3 AM right now at Purdue.</p>
+			<p>Honey, I am writing to you from the trenches of versailles, the war has been long and hard but
+				thankfully I have these blog posts for you to see. Hopefully tomorrow we can get a group pic for the
+				gram to cheer us up. Me and the mates have been working out lately and are looking pretty cut. Sorry
+				i have been getting distracted. What am I doing here again?? Is this a joke blog or am I just bored
+				because its 3 AM right now at Purdue.</p>
 		</div>
-	</div>
 
 </body>
+
 </html>

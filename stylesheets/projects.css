@@ -1,6 +1,4 @@
-
-
-.project{
+.project {
 	justify-content: center;
 	text-align: center;
 	padding-right: 10px;
@@ -8,7 +6,7 @@
 	width: 50%;
 }
 
-.entry{
+.entry {
 	text-align: left;
 	margin: auto;
 	width: 80%;

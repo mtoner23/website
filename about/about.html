@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!--Site Wide head information-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script> $(function () { $("#navbar").load("/include/navbar.html"); $("#links").load("/include/links.html"); });</script>
+
 	<title>Toner Land</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +13,25 @@
 	<link rel="stylesheet" href="/stylesheets/main.css">
 
 	<!--page specific head information-->
-	<link rel="stylesheet" href="stylesheets/about.css">
-
-	<!--Alp Sucks-->
 </head>
+
 <body>
-	<div class='navbar'>
-		<a href="/">Home</a>
-		|
-		<a href="/projects/projects.html">Projects</a>
-		|
-		<a href="/about/about.html">About</a>
-		|
-  		<a href="/blog/blog.html">Blog</a>
-  		|
-  		<a href="http://engineering.purdue.edu/477grp7">ECE 477</a>
+	<div id="navbar"></div>
+
+	<div class="header">
+		<h1>Michael Toner</h1>
+		<img src='/images/michael-espresso.jpeg' title='Yum!' alt='Me drinking espresso martinis' height=200>
+		<div class="caption">
+			<p>Howdy!</p>
+			<p>Welcome to my new website. I'm undecided on what to do with this website. I originally set it up senior
+				of college as an exercise in web development. Now I am interested in putting up a little food blog here
+				where i review local chicago restaurants. Not
+				entirely sure. Any ideas for this send to email below</p> <a
+				href="mailto: miketoner23@gmail.com">miketoner23@test.com</a>
+		</div>
 	</div>
 
-	<div class ="header">
-		<h1>Michael Toner</h1>
-  		<img src='/images/profile.jpg' alt='Profile Picture' height=200>
-  		<div class ="caption">
-  			<p>Hi! I am Michael Toner and welcome to my website. I'm a computer engineering student at Purdue University.</p>
-  		</div>
-  	</div>
-
-  	<div class='sketch' id='text_vehicle'></div>
-
-  	<div class=links>
-		<a href="http://twitter.com/MikeyToner">
-			<img src='/images/twitter.png' alt='My Twitter' height=32>
-		</a>
-		<a href="http://github.com/mtoner23/website">
-			<img src='/images/github.png' alt='My Github' height=32>
-		</a>
-		<br>
-  	</div>
+	<div id="links"></div>
 </body>
+
 </html>

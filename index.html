@@ -2,6 +2,9 @@
 <html>
 <head>
 	<!--Site Wide head information-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script> $(function(){ $("#navbar").load("/include/navbar.html"); $("#links").load("/include/links.html"); });</script> 
+
 	<title>Toner Land</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +12,17 @@
 	<link rel="stylesheet" href="/stylesheets/main.css">
 
 	<!--page specific head information-->
-	<link rel="stylesheet" href="stylesheets/index.css">
-	<script src="p5/p5.min.js"></script>
-	<script src="p5/addons/p5.dom.min.js"></script>
-	<script src="p5/text_vehicle/vehicle.js"></script>
-	<script src="p5/text_vehicle/text_vehicle.js"></script>
-
+	<link rel="stylesheet" href="/stylesheets/index.css">
+	<script src="/p5/p5.min.js"></script>
+	<script src="/p5/addons/p5.dom.min.js"></script>
+	<script src="/p5/text_vehicle/vehicle.js"></script>
+	<script src="/p5/text_vehicle/text_vehicle.js"></script>
 	<!--Alp Sucks-->
 </head>
 <body>
-	<div class='navbar'>
-		<a href="/">Home</a> |
-		<a href="/projects/projects.html">Projects</a> |
-		<a href="/about/about.html">About</a> |
-  		<a href="/blog/blog.html">Blog</a>
-	</div>
+
+	<div id="navbar"></div>
+
 	<div class ="header">
 		<h1>Welcome to Michael's Website</h1>
   	<p>You can play with these dots while you wait for me to make more website</p>
@@ -32,14 +31,6 @@
 
   	<div class='sketch' id='text_vehicle'></div>
 
-  	<div class=links>
-		<a href="http://twitter.com/MikeyToner">
-			<img src='/images/twitter.png' alt='My Twitter' height=32>
-		</a>
-		<a href="http://github.com/mtoner23/website">
-			<img src='/images/github.png' alt='My Github' height=32>
-		</a>
-		<br>
-  	</div>
+	<div id="links"></div>
 </body>
 </html>

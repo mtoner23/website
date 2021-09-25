@@ -6,30 +6,29 @@
     justify-content: center;
     font-family: Arial;
     font-style: bold;
- 	color: #000000;
+    color: #000000;
 }
 
-.header p{
+.header p {
     text-align: left;
     margin: auto;
     width: 80%;
 }
 
-.header img{
+.header img {
     text-align: center;
 }
 
 .sketch {
     margin: 0;
     display: flex;
-
     /* This centers the sketch horizontally. */
     justify-content: center;
 }
 
 body {
-	background-color: #F5EFEF;
-	font-family: Arial;
+    background-color: #F5EFEF;
+    font-family: Arial;
 }
 
 .links {
@@ -40,21 +39,22 @@ body {
 }
 
 .row {
-	display: flex;
-	justify-content: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .navbar {
+    --navbar-text-color: #eff5f2;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     font-family: Arial;
     font-style: bold;
+    color: var(--navbar-text-color);
     background-color: #5F717B;
 }
-
 
 .navbar a {
     text-decoration: none;
@@ -62,9 +62,9 @@ body {
     margin-right: 2px;
     margin-left: 2px;
     font-size: 20px;
-    color: #F5EFEF;
+    color: var(--navbar-text-color);
 }
 
-a:hover {
+.navbar a:hover {
     color: #1f1f2e;
 }
