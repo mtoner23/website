@@ -17,7 +17,7 @@ var backgnd = '#F5EFEF';
 var badWords = ['ass','penis','shit'];
 
 function preload() {
-  font = loadFont('p5/text_vehicle/fonts/AvenirNextLTPro-Demi.otf');
+  font = loadFont('/p5/text_vehicle/fonts/AvenirNextLTPro-Demi.otf');
   //font = loadFont('Affectionately Yours - OTF.otf');
 }
 
