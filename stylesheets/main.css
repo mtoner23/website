@@ -68,3 +68,9 @@ body {
 .navbar a:hover {
     color: #1f1f2e;
 }
+
+canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

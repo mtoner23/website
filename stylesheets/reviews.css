@@ -1,0 +1,11 @@
+.entry {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	margin: auto;
+	width: 80%;
+}
+
+.entry h2 {
+	text-align: center;
+}
