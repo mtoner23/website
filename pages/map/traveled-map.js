@@ -567,7 +567,7 @@ var simplemaps_worldmap_mapdata = {
     IS: {
       name: "Iceland",
       description: "default",
-      color: "default",
+      color: "purple",
       hover_color: "default",
       url: "default",
     },
@@ -1050,7 +1050,7 @@ var simplemaps_worldmap_mapdata = {
     SE: {
       name: "Sweden",
       description: "default",
-      color: "default",
+      color: "purple",
       hover_color: "default",
       url: "default",
     },
