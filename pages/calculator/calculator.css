@@ -1,0 +1,13 @@
+.calculator_wasm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+iframe {
+    width: 80%;
+    /* Adjust size */
+    height: 700px;
+    width: 1200px;
+}
