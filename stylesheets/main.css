@@ -38,6 +38,10 @@ body {
     margin-bottom: 25px;
 }
 
+.links a {
+    margin: 2px;
+}
+
 .row {
     display: flex;
     justify-content: center;
