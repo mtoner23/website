@@ -64,7 +64,7 @@ var simplemaps_worldmap_mapdata = {
     popup_nocss: "no",
 
     //Advanced settings
-    div: "map",
+    div: "world-map",
     auto_load: "yes",
     rotate: "0",
     url_new_tab: "yes",

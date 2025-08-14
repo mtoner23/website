@@ -6,8 +6,11 @@
     <title>Toner Land</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script> $(function () { $("#navbar").load("/include/navbar.html"); $("#links").load("/include/links.html"); });</script>
-    <script type="text/javascript" src="/pages/map/traveled-map.js"></script>
-    <script type="text/javascript" src="/pages/map/worldmap.js"></script>
+    <script type="text/javascript" src="/pages/map/world-mapdata.js"></script>
+    <script type="text/javascript" src="/pages/map/world-map.js"></script>
+
+    <script type="text/javascript" src="/pages/map/us-mapdata.js"></script>
+    <script type="text/javascript" src="/pages/map/us-map.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +21,20 @@
 <body>
     <div id="navbar"></div>
     <div class="header">
-        <h1>Countries I've Visited</h1>
-        <p></p>
+        <h1>Places I've Visited</h1>
+        <p>Everybody has their own definition of a place that they've visited but for me it requires 2 things.</p>
+        <p>
+            1. Spending the night
+        </p>
+        <p>
+            2. Doing some activity there
+        </p>
+        <p>
+            So if your place just connects there or you stop in a motel for the night there or drive through that
+            clearly doesn't count.
+        </p>
     </div>
-    <div id="map"></div>
+    <div id="world-map"></div>
+    <div id="us-map"></div>
     <div id="links"></div>
 </body>
