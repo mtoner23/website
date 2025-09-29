@@ -258,7 +258,7 @@ var simplemaps_usmap_mapdata = {
     SC: {
       name: "South Carolina",
       description: "default",
-      color: "default",
+      color: "purple",
       hover_color: "default",
       url: "default"
     },
