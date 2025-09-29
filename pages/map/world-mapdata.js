@@ -308,7 +308,7 @@ var simplemaps_worldmap_mapdata = {
     CO: {
       name: "Colombia",
       description: "default",
-      color: "default",
+      color: "purple",
       hover_color: "default",
       url: "default",
     },
